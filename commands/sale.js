@@ -24,7 +24,7 @@ module.exports = {
                 { name: "▫️ 손익분기점", value: ("4인 : [🪙`" + String(parseInt(price * 0.95 * 3 / 4)) + "`]\n8인 : [🪙`" + String(parseInt(price * 0.95 * 7 / 8)) + "`]"), inline: false },
                 { name: "▫️ 입찰적정가", value: ("4인 : [🪙`" + String(parseInt(price * 0.95 * 3 / 4 * 100 / 110)) + "`] 🔻\n8인 : [🪙`" + String(parseInt(price * 0.95 * 7 / 8 * 100 / 110)) + "`] 🔻"), inline: false },
             )
-            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+            .setFooter({ text: 'Made By 썬콜' })
         interaction.editReply({ embeds: [sale_result] });
     }
 };

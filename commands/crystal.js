@@ -24,7 +24,7 @@ module.exports = {
                             { name: "**▫️ 구매가**", value: "[🪙`" + String(response.data.Buy).replace(".0", "") + "`]", inline: false },
                             { name: "**▫️ 판매가**", value: "[🪙`" + String(response.data.Sell).replace(".0", "") + "`]", inline: false }
                         )
-                        .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                        .setFooter({ text: 'Made By 썬콜' })
                     interaction.editReply({ embeds: [crystal_result] });
                 }
             });

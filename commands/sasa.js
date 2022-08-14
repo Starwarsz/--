@@ -42,7 +42,7 @@ module.exports = {
                         .addFields(
                             { name: "▫️ 사사게 검색 정보(최근 1만 게시글)", value: sasalist, inline: false }
                         )
-                        .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                        .setFooter({ text: 'Made By 썬콜' })
                     interaction.editReply({ embeds: [sasa_result], ephemeral: true });
                 }
             });

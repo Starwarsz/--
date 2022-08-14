@@ -11,22 +11,6 @@ module.exports = {
                 .setName('닉네임')
                 .setDescription('닉네임을 적으세요.')
                 .setRequired(true))
-        .addBooleanOption(option =>
-            option
-                .setName('타인표시')
-                .setDescription('타인에게 표시 여부(선택사항)')
-                .setRequired(false)),
-    async execute(interaction) {
-
-        username = String(interaction.options.getString('닉네임'))
-
-        ephbool = interaction.options.getBoolean('타인표시')
-
-        if (ephbool === true) {
-            ephbool = false;
-        } else {
-            ephbool = true;
-        }
 
         await interaction.deferReply({ ephemeral: ephbool });
 
@@ -105,7 +89,7 @@ module.exports = {
                                     inline: true
                                 },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         skilllen = 0
                         skillspace = 0
@@ -154,7 +138,7 @@ module.exports = {
                                     value: skillfinal
                                 },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         jewlist = ""
 
@@ -196,7 +180,7 @@ module.exports = {
                                 { name: "▫️ 보석 목록", value: jewlist, inline: false },
                                 { name: "▫️ 카드 목록", value: cardlist, inline: false },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         const ItemList = ["무기", "머리 방어구", "상의"];
                         const ItemList2 = ["하의", "장갑", "어깨 방어구"];
@@ -260,7 +244,7 @@ module.exports = {
 
                         const gearlist_result = new MessageEmbed()
                             .setColor('ORANGE')
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
                             .setTitle('장비');
 
                         if (gearlist == "`장착된 장비가 없습니다./장비 데이터를 불러오지 못 했습니다`") {
@@ -411,7 +395,7 @@ module.exports = {
 
                         const gearlist2_result = new MessageEmbed()
                             .setColor('ORANGE')
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
                             .setTitle('악세서리');
 
                         if (gearlist_2 === "`장착된 악세서리가 없습니다./악세서리 데이터를 불러오지 못 했습니다`") {
@@ -511,7 +495,7 @@ module.exports = {
                                 { name: "▫️ 주간 골드 획득 캐릭터", value: (goldn) + "\n\n▫️ 주간 컨텐츠 최저 레벨을 기준으로 계산했습니다.\n▫️ 클리어 골드 이외의 요소는 고려하지 않았습니다.\n▫️ 아브는 4관 까지만 계산했습니다.\n▫️ 도전 가능한 최상위 컨텐츠 기준으로 계산했습니다.", inline: true },
                                 { name: "획득 골드", value: onlygd, inline: true },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         sasalist = ""
 
@@ -531,7 +515,7 @@ module.exports = {
                             .addFields(
                                 { name: "▫️ 사사게 검색 정보(최근 1만 게시글)", value: sasalist },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         lisrrr = ""
 
@@ -551,7 +535,7 @@ module.exports = {
                             .addFields(
                                 { name: "▫️ 1,000레벨 이상 캐릭터만 표기됩니다.", value: lisrrr },
                             )
-                            .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                            .setFooter({ text: 'Made By 썬콜' })
 
                         const buttons = [
                             {

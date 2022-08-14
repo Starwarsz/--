@@ -29,7 +29,7 @@ module.exports = {
                         .addFields(
                             { name: "▫️ " + response.data.IslandDate, value: advenisland, inline: false }
                         )
-                        .setFooter({ text: 'Made By 모코코더#3931', iconURL: 'https://cdn.discordapp.com/avatars/693421981705568346/f7cf118ca37e88b490ad1ac1489416ea.webp' })
+                        .setFooter({ text: 'Made By 썬콜' })
                     interaction.editReply({ embeds: [adv_result] });
                 }
             });
